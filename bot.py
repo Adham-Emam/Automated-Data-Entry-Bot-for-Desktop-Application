@@ -108,6 +108,7 @@ def save_posts(data, folder_path):
             # Clear Notepad for the next post
             pyautogui.hotkey("ctrl", "a")
             pyautogui.hotkey("del")
+            print(f"Post {post['id']} saved to {file_name}.")
 
         print("Posts saved successfully!")
     else:
